@@ -1,0 +1,14 @@
+li[data-tasktype='Skill Upgrade'] {
+    color: green;
+    font-weight: 300;
+}
+
+li[data-tasktype='Weight Loss'] {
+    color: royalblue;
+    font-weight: 300;
+}
+
+li[data-tasktype='Earn Money'] {
+    color: violet;
+    font-weight: 300;
+}

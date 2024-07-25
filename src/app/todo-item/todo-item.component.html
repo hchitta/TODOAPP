@@ -1,0 +1,14 @@
+@if (isAdmin) {
+    @for (item of taskList; track item.taskId) {
+        <li [attr.data-tasktype]="item.taskType" (click)="showTaskType($event)">
+            (TODO) {{item.taskTitle}} - {{item.isComplte? 'Done' : 'In Progress'}}
+            <button type="submit" [disabled]="isFormValid">Delete</button>
+    
+        </li> 
+    }
+} @else {
+    <p>You are not authorized to see todo items!</p>
+}
+
+
+
